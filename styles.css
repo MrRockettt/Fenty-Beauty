@@ -1418,13 +1418,13 @@ span {
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 450px) {
-  .sticky-header #Layer_1 svg {
-    width: 150px;
-  }
-}
 @media only screen and (min-width: 449px) and (max-width: 600px) {
   .sticky-header #Layer_1 svg {
     width: 250px;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 450px) {
+  .sticky-header #Layer_1 svg {
+    width: 150px;
   }
 }

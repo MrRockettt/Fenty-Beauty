@@ -1274,19 +1274,19 @@ body, html {
     }
 
     .video-container #video-content {
-        width: 50%;
+        width: 60%;
         padding: 10px;
         background-color: transparent;
         color: black;
     }
 
     .video-container #video-content h2 {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .video-container #video-content p {
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .video-container #video-content .btn {

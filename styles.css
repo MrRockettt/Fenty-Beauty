@@ -1423,7 +1423,7 @@ span {
     width: 250px;
   }
 }
-@media only screen and (min-width: 360px) and (max-width: 449px) {
+@media only screen and (min-width: 360px) and (max-width: 450px) {
   .sticky-header #Layer_1 svg {
     width: 150px;
   }

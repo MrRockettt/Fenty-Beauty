@@ -774,7 +774,7 @@ span {
   }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 1024px) {
+@media only screen and (min-width: 350px) and (max-width: 1023px) {
   .menu-icon {
     display: block !important;
   }

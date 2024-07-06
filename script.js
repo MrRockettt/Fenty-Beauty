@@ -58,7 +58,7 @@ closeIcon.addEventListener('click', () => {
 
 // Ensure the menu is hidden and the menu icon is shown when resizing to larger screens
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth > 1023) {
         navMenu.style.display = 'none';
         menuTop.style.display = 'none';
         menuIcon.style.display = 'none'; // Hide menu icon for larger screens
@@ -77,7 +77,7 @@ window.addEventListener('resize', () => {
 
 // Ensure the menu is hidden on page load if the screen is larger than 1024px
 window.addEventListener('load', () => {
-    if (window.innerWidth > 1024) {
+    if (window.innerWidth > 1023) {
         navMenu.style.display = 'none';
         menuTop.style.display = 'none';
         menuIcon.style.display = 'none';

@@ -773,11 +773,17 @@ span {
         text-align: center;
     }
 }
+@media only screen and (min-width: 350px) and (max-width: 1022px) {
 
-@media only screen and (min-width: 350px) and (max-width: 1023px) {
-  .menu-icon {
+      .menu-icon {
+        display: block !important;
+      }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 1024px) {
+  /* .menu-icon {
     display: block !important;
-  }
+  } */
 
   .close-icon {
     display: block;
@@ -812,7 +818,7 @@ span {
   }
 
   .menu-nav .bi-person {
-    display: block;
+    display: block !important;
   }
 
   .icon-links ul li .bi-person {

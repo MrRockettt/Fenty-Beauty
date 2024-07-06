@@ -1,4 +1,3 @@
-// Toggle submenus
 document.querySelectorAll('.nav-menu > li > a').forEach(item => {
     item.addEventListener('click', () => {
         const submenu = item.nextElementSibling;
@@ -56,12 +55,11 @@ closeIcon.addEventListener('click', () => {
     page3.style.display = 'block';
 });
 
-// Ensure the menu is hidden and the menu icon is shown when resizing to larger screens
 window.addEventListener('resize', () => {
     if (window.innerWidth > 1023) {
         navMenu.style.display = 'none';
         menuTop.style.display = 'none';
-        menuIcon.style.display = 'none'; // Hide menu icon for larger screens
+        menuIcon.style.display = 'none'; 
         closeIcon.style.display = 'none';
         blackbox.style.display = 'block';
         iconlinks.style.display = 'block';
@@ -71,11 +69,10 @@ window.addEventListener('resize', () => {
         page2.style.display = 'block';
         page3.style.display = 'block';
     } else {
-        menuIcon.style.display = 'block'; // Show menu icon for smaller screens
+        menuIcon.style.display = 'block'; 
     }
 });
 
-// Ensure the menu is hidden on page load if the screen is larger than 1024px
 window.addEventListener('load', () => {
     if (window.innerWidth > 1023) {
         navMenu.style.display = 'none';
@@ -90,7 +87,7 @@ window.addEventListener('load', () => {
     }
 });
 
-// Bottom Column Content
+// Bottom Footer Content
 
 document.addEventListener('DOMContentLoaded', function() {
     const footerTitles = document.querySelectorAll('.footer-title');

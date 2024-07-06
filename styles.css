@@ -105,7 +105,7 @@ html {
 }
 .triple-icon {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
 }
 .dual-icon .bi-person {
   padding-top: 20px;
@@ -1060,6 +1060,7 @@ span {
   .black-box {
     font-size: 10px;
   }
+
   .video-container #video-content {
     width: 60%;
     padding: 10px;
@@ -1119,9 +1120,12 @@ span {
   .page-3 #email-phone {
     width: 100%;
   }
-  .sticky-header #Layer_1 svg {
-    width: 130px;
+  /* .sticky-header #Layer_1 {
+    padding: 5px;
   }
+  .sticky-header #Layer_1 svg {
+    width: 150px;
+  } */
   .page-3 .back {
     width: 100vw;
     padding: 0px;

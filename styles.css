@@ -75,8 +75,7 @@ html {
 .menu-top {
   font-family: "Poppins";
   background-color: black;
-  /* padding: 10px; */
-  display: none; /* Initially hidden */
+  display: none;
   width: 100vw;
   height: auto;
 }
@@ -136,7 +135,7 @@ html {
   overflow: hidden;
   position: relative;
   z-index: 1000;
-  display: none; /* Initially hidden */
+  display: none;
 }
 
 .nav-menu li {
@@ -372,7 +371,6 @@ html {
   justify-content: space-around;
   align-items: center;
   padding: 0px;
-  /* flex-wrap: wrap; */
 }
 
 .page-2 img,
@@ -462,9 +460,6 @@ html {
   box-sizing: border-box;
 }
 
-/* .page-3 #phone input {
-    margin-right: 25px;
-} */
 
 .page-3 #email-phone svg {
   color: white;
@@ -516,11 +511,6 @@ html {
   box-sizing: border-box;
 }
 
-/* .page-3 #black-bottom {
-    display: flex;
-    flex-wrap: wrap;
-} */
-
 .page-3 #customer-service,
 .page-3 #about {
   display: block;
@@ -571,7 +561,6 @@ html {
   font-size: 12px;
   display: flex;
   width: 100%;
-  /* padding-left: 20px; */
   box-sizing: border-box;
 }
 
@@ -620,14 +609,11 @@ span {
 }
 
 .footer-menu {
-  display: none; /* Hide by default */
+  display: none;
   flex-direction: column;
 }
 
-/* .footer-item {
-    margin-bottom: 20px;
 
-} */
 
 .footer-title {
   font-size: 15px;
@@ -640,11 +626,11 @@ span {
 .footer-links {
   list-style-type: none;
   padding: 0;
-  display: none; /* Hide the links initially */
+  display: none;
 }
 
 .footer-links.show {
-  display: block; /* Show the links when .footer-title is clicked */
+  display: block;
 }
 
 .footer-links li {
@@ -660,13 +646,6 @@ span {
 .footer-links a:hover {
   color: #007bff;
 }
-/* ---------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------- */
 
 /* Media Query Starts Here */
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
@@ -771,7 +750,6 @@ span {
     padding-right: 0px;
     font-size: 13px;
     padding-bottom: 0px;
-    /* text-align: center; */
   }
 }
 
@@ -782,7 +760,6 @@ span {
 
   .close-icon {
     display: block;
-    /* width: 100vw; */
     height: 100%;
   }
 
@@ -872,14 +849,6 @@ span {
     display: flex;
     flex-direction: row;
   }
-
-  /* .page-3 .back #customer-service, .page-3 .back #about {
-        display: block;
-    }
-
-    .page-3 .email-phone #logo{
-        display: none;
-    } */
 
   .page-3 .email-phone {
     background-color: black !important;
@@ -1417,7 +1386,6 @@ span {
     display: none;
   }
 }
-
 @media only screen and (min-width: 449px) and (max-width: 600px) {
   .sticky-header #Layer_1 svg {
     width: 250px;
@@ -1427,4 +1395,10 @@ span {
   .sticky-header #Layer_1 svg {
     width: 150px;
   }
+
+  .icon-links ul{
+    padding-left: 10px;
+  }
 }
+
+

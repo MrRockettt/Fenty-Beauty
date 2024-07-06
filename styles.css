@@ -69,7 +69,7 @@ body, html {
 .menu-top {
     font-family: 'Poppins';
     background-color: black;
-    padding: 10px;
+    /* padding: 10px; */
     display: none; /* Initially hidden */
     width:100vw;
     height: auto
@@ -769,7 +769,7 @@ body, html {
         padding-right: 0px;
         font-size: 13px;
         padding-bottom: 0px;
-        text-align: center;
+        /* text-align: center; */
     }
 }
 
@@ -1041,23 +1041,7 @@ body, html {
             gap: 35px;
     }
 
-    .video-container #video-content {
-        width: 160px;
-        height: 120px;
-        padding-top: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        font-size: 7px;
-        padding-bottom: 0px;
-    }
 
-    .video-container #video-content #btn{
-        width: 80px;
-        font-size: small;
-        border: 0px;
-        align-items: center;
-        font-weight: 500;
-    }
 
     .page-2 .fixed-chat-icon svg {
         width: 24px; 
@@ -1121,9 +1105,6 @@ body, html {
 
 @media only screen and (min-width: 600px ) and (max-width: 780px) {
 
-    .video-spotlight #video-content {
-        display: none;
-    }
 
     .video-spotlight {
         width: 100vw;
@@ -1258,9 +1239,30 @@ body, html {
     .menu-nav {
         width: 100vw;
     }
+
+    .menu-top {
+        width: fit-content;
+    }
+
+    .menu-top h4{
+        font-weight: 400;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .menu-top p{
+        font-size: 12px;
+        padding: 10px;
+    }
+
     .menu-top a img {
         width: fit-content;
         height: fit-content;
+        margin: 0px;
+    }
+
+    .menu-top span {
+        font-size: 14px;
     }
 
     .promo-bar-content .text-1, .promo-bar-content .text-2,.promo-bar-content .text-1 span{
@@ -1271,8 +1273,28 @@ body, html {
         font-size: 10px;
     }
 
-    .video-spotlight #video-content {
-        display: none;
+    .video-container #video-content {
+        width: 50%;
+        padding: 10px;
+        background-color: transparent;
+        color: black;
+    }
+
+    .video-container #video-content h2 {
+        font-size: 15px;
+    }
+
+    .video-container #video-content p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .video-container #video-content .btn {
+        width: 50%;
+        margin: 0px;
+        border: 2px solid black;
+        padding: 10px;
+        background-color: transparent;
     }
 
     .video-spotlight {
@@ -1375,12 +1397,13 @@ body, html {
     .footer-menu h3{
         padding-right: 20px;
         padding-left: 20px;
-        font-weight: 400;   
+        font-weight: 350;   
     }
 
-    .footer-menu ul li a {
+    .footer-menu ul li {
 
         padding-left: 20px;
+        text-align: left;
     }
 
     .page-3 .bottom {
@@ -1399,7 +1422,6 @@ body, html {
         display: block;
         
     }
-
 
     .page-3 .socials h2 {
         display: block;

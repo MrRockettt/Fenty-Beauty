@@ -120,9 +120,10 @@ html {
   color: black;
 }
 
-.sticky-1 .icons {
+.menu-nav .icons {
   display: flex;
   justify-content: center;
+  margin: 16px;
 }
 
 .nav-menu {
@@ -215,15 +216,15 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.sticky-header .sticky-1 .icons {
+.sticky-1 .menu-nav .icons ul {
   margin: 16px;
   gap: 18px;
 }
 
-.sticky-header .sticky-1 .icon-links {
+.sticky-1 .icon-links {
   margin: 16px;
   gap: 18px;
 }
@@ -315,6 +316,11 @@ html {
 
 .icon-links ul a {
   display: flex;
+}
+
+.icons ul li {
+  display: flex;
+  list-style: none;
 }
 
 .video-spotlight {
@@ -788,10 +794,22 @@ span {
     height: 100%;
   }
 
+  .sticky-header .sticky-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
   .icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .sticky-1 .icons ul {
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .menu-nav .menu-icon {
@@ -1217,6 +1235,12 @@ span {
 @media only screen and (min-width: 360px) and (max-width: 600px) {
   .menu-nav {
     width: 100vw;
+
+  }
+
+  .menu-nav .icons {
+    display: flex;
+    flex-direction: row;
   }
 
   .menu-top {
@@ -1450,15 +1474,30 @@ span {
 }
 @media only screen and (min-width: 449px) and (max-width: 600px) {
   .sticky-header #Layer_1 svg {
-    width: 250px;
+    width: 240px;
+  }
+  .sticky-1 .icons ul li a {
+    justify-content: space-between;
   }
 
-  .sticky-1 .icons {
+  .sticky-header .sticky-1 {
+    justify-content: center;
+  }
+
+  .sticky-header #Layer_1 {
+    margin-right: 15px;
+  }
+
+  .sticky-1 .menu-nav .icons ul {
+    margin-right: 20px;
+  }
+  .sticky-1 .icons ul {
     display: flex;
     margin: 0px;
     padding: 0px;
-    justify-content: center;
+    justify-content: space-around;
   }
+
   .sticky-1 .icon-links ul {
     margin: 0px;
     padding: 0px;
@@ -1468,7 +1507,21 @@ span {
 
 @media only screen and (min-width: 350px) and (max-width: 450px) {
   .sticky-header #Layer_1 svg {
-    width: 175px;
+    width: 148px;
     
+  }
+  .sticky-header .sticky-1 svg {
+    justify-content: space-evenly;
+  }
+  .sticky-1 .icons ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+  }
+  .sticky-1 .icon-links ul {
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
   }
 }

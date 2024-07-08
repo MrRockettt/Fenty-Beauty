@@ -109,11 +109,12 @@ html {
   font-size: medium;
 }
 
-.menu-nav  .menu-icon, .menu-nav  .signIn-icon a svg{
+.menu-nav .menu-icon,
+.menu-nav .signIn-icon a svg {
   display: none !important;
 }
 
-.sticky-1 svg{
+.sticky-1 svg {
   display: flex;
   justify-content: center;
   color: black;
@@ -123,7 +124,6 @@ html {
   display: flex;
   justify-content: center;
 }
-
 
 .nav-menu {
   list-style: none;
@@ -187,14 +187,13 @@ html {
 }
 
 .close-icon {
-  display: block;
+  display: none;
   cursor: pointer;
   padding: 10px 10px;
   background-color: black;
   position: relative;
   z-index: 1001;
   /* text-align: right; */
-
 }
 .close-icon svg {
   color: white;
@@ -228,7 +227,6 @@ html {
   margin: 16px;
   gap: 18px;
 }
-
 
 .sticky-header .sticky-1 button {
   border: none;
@@ -315,7 +313,7 @@ html {
   border-radius: 5px;
 }
 
-.icon-links ul a{
+.icon-links ul a {
   display: flex;
 }
 
@@ -478,7 +476,6 @@ html {
   box-sizing: border-box;
 }
 
-
 .page-3 #email-phone svg {
   color: white;
   position: absolute;
@@ -630,8 +627,6 @@ span {
   flex-direction: column;
 }
 
-
-
 .footer-title {
   font-size: 15px;
   cursor: pointer;
@@ -771,12 +766,10 @@ span {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 1023px) {
-
   .close-icon {
     display: block;
     height: 100%;
     float: right;
-    
   }
 
   .close-icon svg {
@@ -784,7 +777,8 @@ span {
     height: 25px;
   }
 
-  .sticky-header .icons .menu-icon, .sticky-header .icons .signIn-icon a svg {
+  .sticky-header .icons .menu-icon,
+  .sticky-header .icons .signIn-icon a svg {
     display: block !important;
   }
 
@@ -794,12 +788,12 @@ span {
     height: 100%;
   }
 
-   .icons  {
+  .icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
   }
+
   .menu-nav .menu-icon {
     display: none;
   }
@@ -969,8 +963,6 @@ span {
     width: 80%;
     height: auto;
   }
-
-  
 }
 
 @media only screen and (min-width: 780px) and (max-width: 881px) {
@@ -1103,7 +1095,6 @@ span {
   .page-2 #images {
     display: flex;
     justify-content: space-between;
-
   }
 
   .page-2 #images a h4 {
@@ -1121,7 +1112,6 @@ span {
     width: 45%;
     height: auto;
     padding: 10px;
-    
   }
 
   .page-3 {
@@ -1307,10 +1297,9 @@ span {
     position: absolute;
   }
 
-  .sticky-header #icon ul{
+  .sticky-header #icon ul {
     padding: 0px;
     justify-content: space-between;
-
   }
 
   .page-2 #images {
@@ -1333,7 +1322,6 @@ span {
     width: 60%;
     height: auto;
   }
-
 
   .page-2 .fixed-chat-icon {
     position: fixed;
@@ -1389,7 +1377,6 @@ span {
     padding: 0px;
     margin-top: 10px;
     margin-bottom: 15px;
-
   }
 
   .page-3 .email-phone #logo {
@@ -1464,8 +1451,6 @@ span {
 @media only screen and (min-width: 449px) and (max-width: 600px) {
   .sticky-header #Layer_1 svg {
     width: 250px;
-
-
   }
 
   .sticky-1 .icons {
@@ -1479,19 +1464,11 @@ span {
     padding: 0px;
     justify-content: space-between;
   }
- 
-
 }
 
-@media only screen and (min-width: 360px) and (max-width: 450px) {
+@media only screen and (min-width: 350px) and (max-width: 450px) {
   .sticky-header #Layer_1 svg {
-    width: 150px;
+    width: 175px;
     
   }
-
-  /* .icon-links ul{
-    padding-left: 10px;
-  } */
 }
-
-

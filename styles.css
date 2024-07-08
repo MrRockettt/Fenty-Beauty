@@ -109,23 +109,21 @@ html {
   font-size: medium;
 }
 
-.menu-nav .bi-person {
-  display: none;
+.menu-nav  .menu-icon, .menu-nav  .signIn-icon a svg{
+  display: none !important;
 }
 
-.dual-icon {
+.sticky-1 svg{
   display: flex;
-}
-
-.triple-icon {
-  display: flex;
-  justify-content: space-between;
-}
-
-.dual-icon .bi-person {
-  padding-top: 20px;
+  justify-content: center;
   color: black;
 }
+
+.sticky-1 .icons {
+  display: flex;
+  justify-content: center;
+}
+
 
 .nav-menu {
   list-style: none;
@@ -188,15 +186,18 @@ html {
   transform: rotate(180deg);
 }
 
-.menu-icon,
 .close-icon {
   display: block;
   cursor: pointer;
-  padding: 15px 20px;
-  background-color: white;
-  color: black;
+  padding: 10px 10px;
+  background-color: black;
   position: relative;
   z-index: 1001;
+  /* text-align: right; */
+
+}
+.close-icon svg {
+  color: white;
 }
 
 .sticky-header {
@@ -215,8 +216,19 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
+
+.sticky-header .sticky-1 .icons {
+  margin: 16px;
+  gap: 18px;
+}
+
+.sticky-header .sticky-1 .icon-links {
+  margin: 16px;
+  gap: 18px;
+}
+
 
 .sticky-header .sticky-1 button {
   border: none;
@@ -229,9 +241,8 @@ html {
 
 .sticky-header #country {
   align-items: center;
-  padding: 5px;
   display: flex;
-  gap: 5px;
+  /* gap: 5px; */
 }
 
 .sticky-header #country span,
@@ -240,14 +251,17 @@ html {
   text-decoration: none;
 }
 
-.sticky-header #Layer_1 {
-  padding: 5px;
-}
+/* .sticky-header #Layer_1 {
+  padding: 10px;
+} */
 
 .sticky-header #Layer_1 svg {
   width: 350px;
 }
 
+.sticky-1 ul {
+  padding: 0px;
+}
 .sticky-header #icon svg {
   color: rgb(35, 31, 32);
 }
@@ -255,7 +269,7 @@ html {
 .sticky-header #icon ul {
   list-style-type: none;
   display: flex;
-  gap: 12px;
+  gap: 15px;
 }
 
 .sticky-header #icon a {
@@ -299,6 +313,10 @@ html {
 .sticky-header .navbar nav ul li a:hover {
   text-decoration: underline;
   border-radius: 5px;
+}
+
+.icon-links ul a{
+  display: flex;
 }
 
 .video-spotlight {
@@ -419,7 +437,7 @@ html {
   color: white;
   padding: 0px;
   margin: 0px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -493,21 +511,20 @@ html {
   flex-direction: row;
   height: auto;
   padding: 25px;
-  width: fit-content;
   width: 100vw;
 }
 
 .page-3 #customer-service {
   color: white;
   padding: 25px;
-  width: 25vw;
+  width: 30%;
   box-sizing: border-box;
 }
 
 .page-3 #about {
   color: white;
   padding: 25px;
-  width: 20vw;
+  width: 35%;
   box-sizing: border-box;
 }
 
@@ -648,7 +665,7 @@ span {
 }
 
 /* Media Query Starts Here */
-@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+@media only screen and (min-width: 1280px) and (max-width: 1441px) {
   .page-3 .back {
     width: fit-content;
   }
@@ -753,14 +770,22 @@ span {
   }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 1023px) {
-  .menu-icon {
-    display: block !important;
-  }
+@media only screen and (min-width: 360px) and (max-width: 1023px) {
 
   .close-icon {
     display: block;
     height: 100%;
+    float: right;
+    
+  }
+
+  .close-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .sticky-header .icons .menu-icon, .sticky-header .icons .signIn-icon a svg {
+    display: block !important;
   }
 
   .nav-menu {
@@ -769,8 +794,14 @@ span {
     height: 100%;
   }
 
+   .icons  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
   .menu-nav .menu-icon {
-    display: block;
+    display: none;
   }
 
   .close-icon {
@@ -904,7 +935,7 @@ span {
   .page-2 #images h4 {
     width: 80%;
     height: fit-content;
-    padding: 20px !important;
+    padding: 17px;
   }
 
   .page-2 #images h4 {
@@ -935,9 +966,11 @@ span {
     padding: 0px;
   }
   .page-2 #images a img {
-    width: 70%;
+    width: 80%;
     height: auto;
   }
+
+  
 }
 
 @media only screen and (min-width: 780px) and (max-width: 881px) {
@@ -1070,11 +1103,25 @@ span {
   .page-2 #images {
     display: flex;
     justify-content: space-between;
-    padding: 0px;
+
   }
+
+  .page-2 #images a h4 {
+    width: 0px;
+    padding-left: 15px;
+    padding-right: 5px;
+    justify-content: center;
+  }
+
+  .page-2 #images a {
+    margin: 0px;
+  }
+
   .page-2 #images a img {
-    width: 60%;
+    width: 45%;
     height: auto;
+    padding: 10px;
+    
   }
 
   .page-3 {
@@ -1086,8 +1133,8 @@ span {
   }
 
   .page-3 .back {
-    width: 96.7vw;
-    padding: 11px;
+    width: 96.6vw;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     display: flex;
@@ -1129,7 +1176,7 @@ span {
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   .footer-menu h3 {
@@ -1186,6 +1233,9 @@ span {
     width: fit-content;
   }
 
+  .sticky-1 {
+    width: 100vw;
+  }
   .menu-top h4 {
     font-weight: 400;
     padding: 5px;
@@ -1257,6 +1307,12 @@ span {
     position: absolute;
   }
 
+  .sticky-header #icon ul{
+    padding: 0px;
+    justify-content: space-between;
+
+  }
+
   .page-2 #images {
     display: flex;
     justify-content: space-between;
@@ -1276,6 +1332,21 @@ span {
   .page-2 #images a img {
     width: 60%;
     height: auto;
+  }
+
+
+  .page-2 .fixed-chat-icon {
+    position: fixed;
+    bottom: 12px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .page-2 .fixed-chat-icon svg {
+    width: 25px;
+    height: 23px;
+    color: #000;
   }
 
   .page-3 {
@@ -1315,6 +1386,10 @@ span {
 
   .page-3 .bottom .footer-second-menu-list {
     font-size: smaller;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
   }
 
   .page-3 .email-phone #logo {
@@ -1389,16 +1464,34 @@ span {
 @media only screen and (min-width: 449px) and (max-width: 600px) {
   .sticky-header #Layer_1 svg {
     width: 250px;
+
+
   }
+
+  .sticky-1 .icons {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+  }
+  .sticky-1 .icon-links ul {
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+ 
+
 }
+
 @media only screen and (min-width: 360px) and (max-width: 450px) {
   .sticky-header #Layer_1 svg {
     width: 150px;
+    
   }
 
-  .icon-links ul{
+  /* .icon-links ul{
     padding-left: 10px;
-  }
+  } */
 }
 
 

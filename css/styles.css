@@ -1373,7 +1373,7 @@ span {
   .page-2 .fixed-chat-icon {
     position: fixed;
     bottom: 12px;
-    right: 15px;
+    right: 20px;
     width: 50px;
     height: 50px;
   }
@@ -1668,6 +1668,9 @@ span {
     .sticky-header #Layer_1 svg {
       width: 12rem;
     }
+    .sticky-header #Layer_1 {
+      padding: 0px;
+    }
   
     .sticky-1 {
       width: 100%;
@@ -1681,6 +1684,7 @@ span {
       display: flex;
       margin: 0;
       padding: 0;
+      width: fit-content;
       align-items: center;
       justify-content: space-around;
     }
@@ -1694,5 +1698,11 @@ span {
     .sticky-1 .icon-links {
       margin: 0;
       justify-content: center;
+      width: min-content;
+      
+    }
+
+    .sticky-1 .icon-links ul {
+      gap: 0px;
     }
 }

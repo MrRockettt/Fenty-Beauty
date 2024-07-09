@@ -123,7 +123,7 @@ html {
 .menu-nav .icons {
   display: flex;
   justify-content: center;
-  margin: 16px;
+  /* margin: 16px; */
 }
 
 .nav-menu {
@@ -219,6 +219,13 @@ html {
   justify-content: space-evenly;
 }
 
+.menu-nav .icons {
+  display: none;
+}
+
+.sticky-1 .menu-nav {
+  display: none;
+}
 .sticky-1 .menu-nav .icons ul {
   margin: 16px;
   gap: 18px;
@@ -788,6 +795,14 @@ span {
   .sticky-header .icons .menu-icon,
   .sticky-header .icons .signIn-icon a svg {
     display: block !important;
+  }
+
+  .menu-nav .icons {
+    display: block;
+  }
+  
+  .sticky-1 .menu-nav {
+    display: block;
   }
 
   .nav-menu {

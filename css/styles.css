@@ -1635,7 +1635,7 @@ span {
 
 
   .sticky-1 .menu-nav .icons ul {
-    gap: 0;
+    gap: 17px;
     padding-left: -25px;
   }
 
@@ -1668,12 +1668,12 @@ span {
       margin: 0;
       padding: 0;
       align-items: center;
-      /* justify-content: space-around; */
+      justify-content: space-around;
     }
   
   
     .sticky-1 .menu-nav .icons ul {
-      gap: 0;
+      gap: 11px;
       padding-left: -20 px;
     }
   

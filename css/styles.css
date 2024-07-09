@@ -241,7 +241,6 @@ html {
 .sticky-header #country {
   align-items: center;
   display: flex;
-  /* gap: 5px; */
 }
 
 .sticky-header #country span,
@@ -250,9 +249,9 @@ html {
   text-decoration: none;
 }
 
-/* .sticky-header #Layer_1 {
-  padding: 10px;
-} */
+.sticky-header #Layer_1 {
+  padding: 5px;
+}
 
 .sticky-header #Layer_1 svg {
   width: 350px;

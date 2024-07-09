@@ -520,7 +520,7 @@ html {
   flex-direction: row;
   height: auto;
   padding: 25px;
-  width: 100vw;
+  width: 100%;
 }
 
 .page-3 #customer-service {
@@ -586,7 +586,7 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   display: flex;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
 }
 
@@ -694,7 +694,7 @@ span {
   }
 
   .page-3 {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

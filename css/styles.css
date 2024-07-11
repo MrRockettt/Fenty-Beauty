@@ -1590,14 +1590,14 @@ span {
   }
 
   .sticky-1 .menu-nav .icons ul {
-    padding-right: 25px;
+    padding-right: 55px;
   }
 
-  .sticky-1 .icons {
+  .sticky-1 .menu-nav .icons {
     display: flex;
     padding: 0;
     align-items: center;
-    /* justify-content: space-around; */
+    justify-content: center;
   }
 
   .sticky-1 .menu-nav .icons ul {
@@ -1656,8 +1656,21 @@ span {
       align-items: center;
     }
   
+    .sticky-header .sticky-1 #Layer_1 {
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+    }
     .sticky-header #Layer_1 svg {
       width: 10rem;
+    }
+
+    .sticky-1 .menu-nav{
+      width: fit-content;
+    }
+
+    .sticky-1 .menu-nav .menu-icon, .sticky-1 .menu-nav .signIn-icon{
+      display: block;
     }
     
     .sticky-header #Layer_1 {
@@ -1667,7 +1680,7 @@ span {
     .sticky-1 {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
     }
   
@@ -1681,20 +1694,31 @@ span {
       justify-content: space-around;
     }
   
+    .sticky-1 .icon-links {
+      display: flex;
+      margin: 0px;
+      padding: 0px;
+      width: fit-content;
+      align-items: center;
+      justify-content: space-around;
+    }
   
     .sticky-1 .menu-nav .icons ul {
-      gap: 11px;
+
+      margin-right: 0px;
+      margin-left: 0px;
+
+    }
+    .sticky-1 .menu-nav .icons ul li{
+      gap: 13px;
       padding-left: -20 px;
     }
   
-    .sticky-1 .icon-links {
-      margin: 0;
-      justify-content: center;
-      width: min-content;
-      
+    .sticky-1 .menu-nav .icon-links ul{
+      margin-left: 0px;
     }
 
-    .sticky-1 .icon-links ul {
-      gap: 0px;
+    .sticky-1 .menu-nav .icon-links ul li{
+      gap: -25px;
     }
 }
